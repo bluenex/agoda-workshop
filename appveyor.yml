@@ -26,7 +26,6 @@ before_build:
     dotnet restore
 build:
   project: stage1\src\stage1.csproj
-  publish_aspnet_core: true
   verbosity: minimal
 notifications:
 - provider: GitHubPullRequest
